@@ -57,8 +57,8 @@ i18n.configure({
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`Yivy Av.`, { type: "PLAYING" });
-  client.user.setStatus("idle");
+  client.user.setActivity { type: "PLAYING" };
+  client.user.setStatus("online");
   let channel = client.channels.cache.find(r => r.id === "1015575482969890926");//ايدي الروم
   if(!channel)return console.log("can't find channel")
   channel.join();
